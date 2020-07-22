@@ -1,0 +1,29 @@
+{
+  "name": "vue-test-2-next-boilerplate",
+  "version": "1.0.0",
+  "description": "Vue 2.x and vue-next test template",
+  "main": "index.js",
+  "author": "pikax <carlos@hypermob.co.uk>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "test": "yarn test:vue2 && yarn test:vue3",
+    "test:vue2": "cross-env VUE=2 yarn jest",
+    "test:vue3": "yarn jest"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.10.4",
+    "@types/jest": "^26.0.5",
+    "babel-jest": "^26.1.0",
+    "cross-env": "^7.0.2",
+    "jest": "^26.1.0"
+  },
+  "peerDependencies": {
+    "@vue/composition-api": "^1.0.0-beta.6"
+  },
+  "dependencies": {
+    "@vue/composition-api": "^1.0.0-beta.6",
+    "vue": "^3.0.0-rc.4",
+    "vue2": "npm:vue@^2.6.1"
+  }
+}
